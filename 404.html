@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Không Tìm Thấy Trang | Viết Mạnh BDS</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1519/1519722.png">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+      :root {
+          --primary-gold: #C5A059;
+          --primary-gold-dark: #b08d4b;
+          --dark-navy: #0f172a;
+      }
+
+      body {
+          font-family: 'Montserrat', sans-serif;
+          color: #333;
+          overflow-x: hidden;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Playfair Display', serif;
+      }
+
+      /* --- LUXURY ANIMATIONS (Borrowed from Main Site) --- */
+
+      /* Shimmer Effect */
+      @keyframes shimmer-sweep {
+          0% {
+              transform: translateX(-150%) skewX(-15deg);
+          }
+          50%, 100% {
+              transform: translateX(150%) skewX(-15deg);
+          }
+      }
+
+      .btn-luxury {
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s ease;
+      }
+
+      .btn-luxury::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100%;
+          background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+          transform: translateX(-150%) skewX(-15deg);
+          animation: shimmer-sweep 3s infinite;
+      }
+
+      /* Soft Float */
+      @keyframes float-gentle {
+          0%, 100% {
+              transform: translateY(0);
+          }
+          50% {
+              transform: translateY(-6px);
+          }
+      }
+
+      .floating-group .float-item {
+          animation: float-gentle 3s ease-in-out infinite;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .floating-group .float-item:nth-child(1) {
+          animation-delay: 0s;
+      }
+
+      .floating-group .float-item:nth-child(2) {
+          animation-delay: 0.2s;
+      }
+
+      .floating-group .float-item:nth-child(3) {
+          animation-delay: 0.4s;
+      }
+
+      /* Gradient Text */
+      .gradient-text {
+          background: linear-gradient(to right, #C5A059, #FDB931, #C5A059);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-size: 200% auto;
+          animation: shine 5s linear infinite;
+      }
+
+      @keyframes shine {
+          to {
+              background-position: 200% center;
+          }
+      }
+
+      /* 404 Specific Styles */
+      .bg-pattern {
+          background-image: radial-gradient(circle at 1px 1px, rgba(197, 160, 89, 0.15) 1px, transparent 0);
+          background-size: 40px 40px;
+      }
+
+      .text-outline-gold {
+          -webkit-text-stroke: 1px #C5A059;
+          color: transparent;
+      }
+  </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+<!-- Header (Simplified) -->
+<header role="banner" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold font-serif tracking-widest text-slate-800 flex items-center gap-2">
+      <img
+          src="https://static.ladipage.net/67572050ff2f0901348c57b8/ban-sao-f367633cd842e5214593e17e20fa4c28-20250110042549-jgqxu.jpg"
+          alt="Logo" class="h-10 w-10 rounded-full object-cover border border-[#C5A059]">
+      <span>VIETMANH<span class="text-[#C5A059]">BDS</span></span>
+    </a>
+
+    <a href="index.html"
+       class="hidden md:inline-block text-sm font-bold uppercase tracking-wider text-slate-600 hover:text-[#C5A059] transition-colors">
+      <i class="fas fa-arrow-left mr-2"></i> Về Trang Chủ
+    </a>
+  </div>
+</header>
+
+<!-- Main 404 Content -->
+<main class="flex-grow flex items-center justify-center relative pt-20 overflow-hidden bg-slate-900">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/95 to-slate-900/80 z-10"></div>
+    <img
+        src="https://w.ladicdn.com/s1000x1150/65d32711e1e9400013ab1e1b/sieu-do-thi-ket-noi1-20250103100119-jtluy.jpg"
+        alt="Background" class="w-full h-full object-cover opacity-40">
+  </div>
+
+  <!-- Decorative Elements -->
+  <div
+      class="absolute top-1/4 right-10 w-64 h-64 border border-[#C5A059]/10 rounded-full animate-[spin_40s_linear_infinite] z-0 hidden md:block"></div>
+  <div
+      class="absolute bottom-1/4 left-10 w-40 h-40 border border-[#C5A059]/20 rounded-full animate-[spin_20s_linear_infinite_reverse] z-0 hidden md:block"></div>
+
+  <div class="container mx-auto px-4 relative z-20 text-center">
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <!-- 404 Big Text -->
+      <h1 class="text-[8rem] md:text-[12rem] leading-none font-serif font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#C5A059] to-slate-800 opacity-90 select-none">
+        404
+      </h1>
+
+      <!-- Message -->
+      <div class="relative -mt-4 md:-mt-10 mb-8">
+        <div
+            class="inline-block px-6 py-2 border border-[#C5A059] bg-slate-900/80 backdrop-blur-sm text-[#C5A059] text-xs md:text-sm font-bold uppercase tracking-[0.2em] rounded-full shadow-lg">
+          Địa chỉ này chưa được quy hoạch
+        </div>
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-serif text-white font-bold mb-6">
+        Có vẻ bạn đã đi lạc khỏi <br class="md:hidden"> <span class="gradient-text">Bản Đồ Đầu Tư</span>
+      </h2>
+
+      <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+        Đường dẫn bạn truy cập có thể đã bị thay đổi hoặc không tồn tại.
+        Hãy để <strong class="text-white">Viết Mạnh</strong> đưa bạn trở lại với những cơ hội đầu tư Bất động sản giá
+        trị thực.
+      </p>
+
+      <!-- Actions -->
+      <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+        <a href="index.html"
+           class="btn-luxury px-8 py-4 bg-[#C5A059] text-white font-bold rounded-sm hover:bg-white hover:text-[#C5A059] transition-all duration-300 uppercase tracking-wider text-sm shadow-[0_0_20px_rgba(197,160,89,0.3)]">
+          <i class="fas fa-home mr-2"></i> Quay Về Trang Chủ
+        </a>
+
+        <a href="index.html#contact"
+           class="px-8 py-4 border border-white/20 bg-white/5 backdrop-blur-sm text-white font-bold rounded-sm hover:bg-white hover:text-slate-900 transition-all duration-300 uppercase tracking-wider text-sm flex items-center gap-2 group">
+          <span>Liên Hệ Hỗ Trợ</span>
+          <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer (Simplified) -->
+<footer class="bg-slate-950 py-8 border-t border-slate-800 relative z-30">
+  <div
+      class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+    <div class="text-gray-500 text-xs">
+      <p>&copy; 2026 <strong class="text-[#C5A059]">VietManhBDS</strong>. All rights reserved.</p>
+    </div>
+
+    <div class="flex gap-6">
+      <a href="#" class="text-gray-500 hover:text-[#C5A059] transition-colors"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-gray-500 hover:text-[#C5A059] transition-colors"><i class="fab fa-tiktok"></i></a>
+      <a href="#" class="text-gray-500 hover:text-[#C5A059] transition-colors"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="text-gray-500 hover:text-[#C5A059] transition-colors"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Action Buttons (Essential for conversion even on 404) -->
+<div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50 floating-group">
+  <a href="tel:0931360768"
+     class="float-item w-12 h-12 rounded-full bg-[#C5A059] flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform relative group">
+    <i class="fas fa-phone-alt"></i>
+    <span
+        class="absolute right-full mr-3 bg-slate-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Gọi Hỗ Trợ</span>
+  </a>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Init AOS
+    AOS.init({
+        once: true,
+        duration: 800,
+        easing: 'ease-out-cubic',
+    });
+</script>
+</body>
+</html>
